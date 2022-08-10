@@ -2,8 +2,8 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/PTSans-400.woff2") format("woff2"),
-    url("../fonts/PTSans-400.woff") format("woff");
+  src: url("../fonts/pt-sans-400.woff2") format("woff2"),
+    url("../fonts/pt-sans-400.woff") format("woff");
   font-display: swap;
 }
 
@@ -11,8 +11,8 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/PTSans-700.woff2") format("woff2"),
-    url("../fonts/PTSans-700.woff") format("woff");
+  src: url("../fonts/pt-sans-700.woff2") format("woff2"),
+    url("../fonts/pt-sans-700.woff") format("woff");
   font-display: swap;
 }
 
@@ -28,7 +28,6 @@ body {
 
 /* так как  кнопки чаще всего используются на всех страницах сайта. Именно поэтому стили кнопок мы зададим сразу после body. */
 .button {
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -46,37 +45,33 @@ body {
   background-color: #82b3d3;
   border-color: #82b3d3;
   box-shadow: none;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   border-style: none;
 }
 
-.search-button{
+.search-button {
   font-size: 20px;
   line-height: 36px;
 }
 
-.apply-button{
+.apply-button {
   background-color: #82b3d3;
   border-style: none;
 }
 
-.favourites-button{
+.favourites-button {
   background-color: #82b3d3;
 }
 
-.decided-favourites-button{
+.decided-favourites-button {
   background-color: #7db54f;
 }
 
 .page-header {
   color: #000000;
-  background-color: inherit;
-  /* цвет фона такой же, как и у родителя body. надо ли его тут дублировать*/
 }
 
 .main-navigation-link {
-  font-family: inherit;
-  font-style: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -102,8 +97,6 @@ body {
 }
 
 .title {
-  font-family: inherit;
-  font-style: inherit;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -117,18 +110,12 @@ body {
 }
 
 .advantage-title {
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .advantage-description {
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
@@ -141,13 +128,6 @@ body {
   color: #ffffff;
 }
 
-.town-description {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: inherit;
-}
 
 .newsletter {
   background-image: url("../images/background.png");
@@ -156,13 +136,13 @@ body {
   color: #ffffff;
   background-repeat: no-repeat;
 }
-.newsletter-catalog{
+
+.newsletter-catalog {
   background-color: #ffffff;
-  color:#000000;
+  color: #000000;
 }
+
 .telephone-number {
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -180,11 +160,21 @@ body {
 }
 
 .hotel-card-title {
-  font-family: inherit;
-  font-style: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
 
+}
+
+.hotel-card-price{
+  font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+}
+
+.hotel-card-raiting{
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
 }
