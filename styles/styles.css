@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -24,6 +28,14 @@ body {
   line-height: 26px;
   color: #333333;
   background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* так как  кнопки чаще всего используются на всех страницах сайта. Именно поэтому стили кнопок мы зададим сразу после body. */
@@ -47,6 +59,7 @@ body {
   box-shadow: none;
   border-radius: 0 10px 10px 0;
   border-style: none;
+
 }
 
 .search-button {
@@ -69,6 +82,28 @@ body {
 
 .page-header {
   color: #000000;
+  display: flex;
+  /*нужен здесь флекс или нет-пока не поняла, но вероятнее нужен */
+}
+
+.navigation-logo {
+  margin-left: 70px;
+}
+
+.main-navigation {
+  display: flex;
+
+}
+
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 490px;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .main-navigation-link {
@@ -82,6 +117,11 @@ body {
   background-color: inherit;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* для класса index-main не задаю никаких данных, потому что свойства будут те же самые, что и у body*/
 .welcome-sedona {
   background-image: url("../images/index-background.jpg");
@@ -91,10 +131,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.logo {
+  display: block;
+  /* ставим, так как карттинки-инлайновые элементы*/
+  margin: 0 auto;
+}
+
 /*List*/
 .advantages {
   text-align: center;
 }
+
+
 
 .title {
   font-weight: 700;
@@ -105,8 +153,44 @@ body {
   text-align: center;
 }
 
+
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+}
+
+.advantages-item:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-img-item {
+  width: 400px;
+}
+
+.town-list {
+  display: flex;
+}
+
 .advantage {
   background-color: #82b3d3;
+  width: 400px;
+}
+
+
+.advantage-image {
+  display: block;
+  width: 800px;
 }
 
 .advantage-title {
@@ -119,6 +203,8 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+
+
 
 .black-font {
   color: #000000;
@@ -135,11 +221,13 @@ body {
   background-color: #b0c4de;
   color: #ffffff;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .newsletter-catalog {
   background-color: #ffffff;
   color: #000000;
+  text-align: center;
 }
 
 .telephone-number {
@@ -167,14 +255,56 @@ body {
 
 }
 
-.hotel-card-price{
+.hotel-card-price {
   font-size: 18px;
-line-height: 21px;
-font-weight: 400;
+  line-height: 21px;
+  font-weight: 400;
 }
 
-.hotel-card-raiting{
+.hotel-card-raiting {
   font-weight: 400;
-font-size: 16px;
-line-height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.booking-block {
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs-item:first-child {
+  list-style: none;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-results {
+  display: flex;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card {
+  width: 340px;
+}
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
 }
