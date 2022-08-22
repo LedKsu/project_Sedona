@@ -30,6 +30,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   min-height: 100%;
 }
@@ -83,6 +84,7 @@ body {
 .page-header {
   color: #000000;
   display: flex;
+  flex-wrap: wrap;
   /*нужен здесь флекс или нет-пока не поняла, но вероятнее нужен */
 }
 
@@ -92,6 +94,8 @@ body {
 
 .main-navigation {
   display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
 
 }
 
@@ -180,6 +184,7 @@ body {
 
 .town-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .advantage {
@@ -190,7 +195,6 @@ body {
 
 .advantage-image {
   display: block;
-  width: 800px;
 }
 
 .advantage-title {
@@ -244,7 +248,13 @@ body {
 }
 
 .hotel-card-link {
+  display: block;
   text-decoration: none;
+}
+
+.hotel-card-image{
+  display: block;
+  width: 100%;
 }
 
 .hotel-card-title {
@@ -273,6 +283,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item:first-child {
@@ -281,10 +292,12 @@ body {
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-results {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hotel-list {
@@ -302,9 +315,11 @@ body {
 .pagination-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
